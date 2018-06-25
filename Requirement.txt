@@ -1,0 +1,29 @@
+# Problem Statement
+We are looking for a program that manages disjointed intervals of integers. 
+
+#### E.g.: 
+- [[1, 3], [4, 6]] is a valid object gives two intervals.
+- [[1, 3], [3, 6]] is not a valid object because it is not disjoint.
+- [[1, 6]] is the intended result.
+- Empty array [] means no interval, it is the default/start state.
+
+#### We want you to implement two functions: 
+add(from, to)
+remove(from, to)
+
+#### Here is an example sequence:
+
+Start: []
+- Call: add(1, 5) => [[1, 5]]
+- Call: remove(2, 3) => [[1, 2], [3, 5]]
+- Call: add(6, 8) => [[1, 2], [3, 5], [6, 8]]
+- Call: remove(4, 7) => [[1, 2], [3, 4], [7, 8]]
+- Call: add(2, 7) => [[1, 8]]
+
+# Running the example
+
+#### Run in an IDE
+
+Directly import the project as an Eclipse Project (in any of your existing workspace or create a new workspace). 
+Right-click and Run as Java Application to execute the program.
+
